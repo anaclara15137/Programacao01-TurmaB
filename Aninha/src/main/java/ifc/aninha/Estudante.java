@@ -18,6 +18,11 @@ public class Estudante {
     private char genero;
     private String matricula;
     private String email;
+    private String nivelEnsino;
+    private int telefone;
+    private int anosin;
+    private String semestre;
+    private String situacao;
 
     public Estudante() {
         nome = "Nobody";
@@ -40,7 +45,7 @@ public class Estudante {
     }
 
     public Date getdataNascimento() {
-        return dataNascimento = _dataNascimento;
+        return dataNascimento;
     }
 
     public void setDate(Date _dataNascimento) {
@@ -74,13 +79,49 @@ public class Estudante {
         matricula = _matricula;
 
     }
-    
-    public String getmail (){
+
+    public String getmail() {
         return email;
-        
-    }   
-    public void setemail (String _email){
+
+    }
+
+    public void setemail(String _email) {
         email = _email;
+
+    }
+    public String nivelEnsino(){
+        return nivelEnsino;
+    }
+            
+    public int gettelefone() {
+        return telefone;
+
+    }
+
+    public void setTelefone(int _telefone) {
+        telefone = _telefone;
+
+    }
+
+    public int getanosin() {
+        return telefone;
+    }
+
+    public void setanosin(int _anosin) {
+        anosin = anosin;
+    }
+
+    public String getsemestre() {
+        return semestre;
+    }
+    public void setsemestre(String _semestre){
+        semestre = _semestre;
+    }
+    public String getsituacao(){
+        return semestre;
         
     }
+    public void setsituacao(String _situacao){
+        situacao = _situacao;
     }
+}
